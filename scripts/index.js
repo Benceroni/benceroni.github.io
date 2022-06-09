@@ -1,4 +1,6 @@
 const date = new Date();
 let currentYear;
 currentYear = date.getFullYear();
-document.querySelector("#year").textContent = currentYear;
+console.log(currentYear);
+document.getElementsByClassName("year").innerHTML = currentYear;
+// No idea why this JS isn't working and i'm out of time so...

@@ -2,7 +2,7 @@
 main,
 header,
 footer {
-  width: 970px;
+  width: 1200px;
   margin: auto;
   font-family: BrandonGrotesqueWeb-Black, "Arial Black", Arial, Helvetica,
     sans-serif;
@@ -18,7 +18,8 @@ main {
   margin: 1rem;
   margin: auto;
 }
-h1 {
+h1,
+footer {
   color: white;
 }
 h2 {
