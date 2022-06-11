@@ -11,7 +11,6 @@ header,
 footer {
   background-color: rgb(200, 32, 32);
   padding: 1rem;
-  border-radius: 1rem;
   text-align: center;
 }
 main {
@@ -26,10 +25,6 @@ h2 {
   box-shadow: 0px 1px black;
 }
 img {
-  float: right;
-  height: max-content;
-  width: 20rem;
-  margin: 2rem;
   box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.399);
 }
 

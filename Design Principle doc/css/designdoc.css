@@ -1,0 +1,31 @@
+@media (min-width: 32.5em) {
+  .photocollection {
+    display: grid;
+    padding: 1rem 25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    column-gap: 50px;
+  }
+  header {
+    padding: 0px 25rem;
+  }
+}
+
+body {
+  font-family: BrandonGrotesqueWeb-Black, "Arial Black", Arial, Helvetica;
+}
+
+img {
+  width: 100%;
+  box-shadow: 5px 0px 5px black;
+}
+.text {
+  grid-row-start: 2;
+  padding: 1rem;
+  box-shadow: -1px 2px black;
+  background-color: rgb(247, 247, 247);
+}
+
+p {
+  padding: 0.5rem;
+}
