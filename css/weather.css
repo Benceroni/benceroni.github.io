@@ -1,0 +1,92 @@
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: BrandonGrotesqueWeb-Black, "Arial Black", Arial, Helvetica;
+}
+nav {
+  background-color: #2a9ae4;
+  margin: 0 auto;
+  max-width: 960px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header {
+  display: block;
+}
+.active {
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.infobar {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.socialmedia {
+  display: flex;
+}
+
+.date {
+  padding: 1rem;
+}
+
+.title {
+  padding: 1rem;
+}
+.titleset {
+  padding: 1rem;
+}
+footer {
+  justify-items: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  header,
+  footer,
+  main {
+    border-radius: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  .title {
+    display: flex;
+  }
+  nav ul :hover {
+    transform: scale(1.15);
+    transition: 0.1s;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
