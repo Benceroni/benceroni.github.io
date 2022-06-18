@@ -28,7 +28,7 @@ const monthNames = [
 document.getElementById("displayDate").innerHTML =
   daylist[day] +
   ", " +
-  day +
+  today.getDate() +
   " " +
   monthNames[today.getMonth()] +
   " " +
