@@ -77,9 +77,21 @@ footer {
   font-weight: 700;
 }
 
-.heroimage {
+#dependentmessage{
   padding: 1rem;
+  background-color: yellow;
+  text-align: center;
+}
+
+.heroimage {
+  /* padding: 1rem; */
   position: relative;
+  width: 960px;
+
+}
+
+.heroimg {
+  width: 100%;
 }
 
 .weathersummary {

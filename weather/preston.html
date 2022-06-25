@@ -31,15 +31,20 @@
     </header>
     <main>
       <h3 id="locationName">Preston Idaho</h3>
+      <div id="dependentmessage">This saturday at 9am! Pankcake breakfast at clovis park.</div>
       <div class="heroimage">
-        <img src="/weather/images/preston-landscape.jpg" width="100%" alt="" />
+        <img class="heroimg" src="/weather/images/wdd230_image_franklinOriginal_800_no_label.jpeg"  sizes="50vw"
+        srcset="/weather/images/wdd230_image_franklinOriginal_200.jpeg 200w,
+         /weather/images/wdd230_image_franklinOriginal_500.jpeg 500w,
+          /weather/images/wdd230_image_franklinOriginal_800.jpeg 800w" alt="preston sunny day" />
+        
         <div class="weathersummary">
           <h3>Weather Summary</h3>
-          <p>Currently: <span id="current">Balmy</span></p>
-          <p>High: <span id="high">°F</span></p>
-          <p>Wind Chill: <span id="windChill">Chilly</span></p>
+          <p>Currently: <span id="current">40</span></p>
+          <p>High: <span id="high">lots of degreees°F</span></p>
+          <p>Wind Chill: <span id="windChill"></span></p>
           <p>Humidity: <span id="humidity">Idaho</span></p>
-          <p>Wind speed: <span id="windSpeed">Fast</span></p>
+          <p>Wind speed: <span id="windSpeed">5</span></p>
         </div>
         <div class="forecast">
           <div class="daybox">
@@ -68,13 +73,14 @@
           <div class="temp">69*</div>
         </div>
       </div>
+    </div>
       <div class="article">
         <img class = "articleimg" src="images/shotgun.jpg"  alt="">
         <h3>article Title</h3>
         <h4>Autored by: author.jpg</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, minus. Reprehenderit laboriosam amet cumque officiis sit enim cupiditate beatae nulla sunt labore modi adipisci dolor porro autem impedit illum, accusamus commodi, voluptas quo unde hic? Officia expedita nobis provident? Pariatur assumenda maiores accusantium non voluptates sequi sed, eos facilis ab autem quisquam provident quaerat architecto cumque saepe totam. Tempore ipsa illum reprehenderit eius! Eum eius inventore quos ratione earum, ut nobis esse fugiat, in voluptatum rerum pariatur minima blanditiis nostrum non labore ipsum? Impedit cupiditate repellendus aspernatur dicta. Enim delectus porro facere error ea. Aperiam quos cum dolorum provident necessitatibus reiciendis repellendus commodi cumque placeat. Dignissimos at voluptas accusamus nemo autem sed inventore fugit possimus sint quisquam quae amet, natus, magni id! Dolore pariatur ad eum porro excepturi obcaecati ut, sapiente doloribus atque blanditiis, in aut voluptas molestias accusantium fuga distinctio reiciendis possimus quod voluptatum eveniet deserunt? Qui nostrum incidunt blanditiis, consectetur consequatur eum modi id sunt facilis tenetur asperiores corporis esse illum libero hic, explicabo totam eos labore quod quas optio! Error quis numquam illum repudiandae obcaecati sint dolorem vitae! Asperiores temporibus sint quis magnam distinctio, atque totam doloremque, tempora unde rem consequatur dignissimos quidem rerum beatae, sed odit?</p>
 
-      </div>
+      
     </main>
     <footer>
       <img class="location-image" src="/images/Screenshot 2022-06-22 174615.png" alt="Location image" width="100%" />
@@ -96,5 +102,6 @@
       </div>
     </footer>
     <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>

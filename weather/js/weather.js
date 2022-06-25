@@ -53,8 +53,17 @@ function toggleMenu() {
     .classList.toggle("responsive");
 }
 
+// creating days of the week for forecast
+
 document.getElementById("day1").innerHTML = tomorrow;
 document.getElementById("day2").innerHTML = day2;
 document.getElementById("day3").innerHTML = day3;
 document.getElementById("day4").innerHTML = day4;
 document.getElementById("day5").innerHTML = day5;
+
+//almost friday calculation:
+
+if (daylist[day] != "Friday") {
+  document.getElementById("dependentmessage").style.display = "none";
+  console.log("code working");
+}
