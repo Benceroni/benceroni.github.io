@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/gallery-7.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="title">
+          <img src="images/logo1.jpeg" alt="" width="150" />
+          <div class="titleset">
+            <h1>Weatherby's Weather Stuff</h1>
+            <h2>Where Weather by Weatherby gets saturated</h2>
+          </div>
+        </div>
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="#"> Preston</a></li>
+          <li><a href="#"> Soda Springs</a></li>
+          <li><a href="#"> Fish Haven</a></li>
+          <li><a href="#"> Storm Center</a></li>
+          <li><a href="#" class="active"> Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="gridboxes">
+        <div class="weatherphotos">
+          <img data-src="images/clouds6.jpg" alt="" />
+          <p>Treasure valley mountains with dusting of snow.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds7.jpg" alt="" />
+          <p>light cloud covered sunst.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds1.jpg" alt="" />
+          <p>Cumulus nimbus clouds.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds2.jpg" alt="" />
+          <p>Stratus clouds invading the valley.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/cloud9.jpg" alt="" />
+          <p>Metal a10 bird plays among the clouds.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds8.jpg" alt="" />
+          <p>Streaky clouds try to ruin sunset but fail.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds3.jpg" alt="" />
+          <p>Nacreous Clouds populate the sky.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds5.jpg" alt="" />
+          <p>Boise mountains covered by late may snowfall.</p>
+        </div>
+        <div class="weatherphotos">
+          <img data-src="images/clouds4.jpg" alt="" />
+          <p>Mammatus Cloud sunset.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        class="location-image"
+        src="/images/Screenshot 2022-06-22 174615.png"
+        alt="Location image"
+        width="100%"
+      />
+      <div class="socialm edia">
+        <a href="https://instagram.com/monolith.sys" title="Instagram"
+          ><img src="images/instagram.png" alt="instagram" height="50"
+        /></a>
+        <a href="https://gmail.com/" title="email"
+          ><img src="images/email.png" alt="email" height="50"
+        /></a>
+        <a href="https://Youtube.com/" title="youtube"
+          ><img src="images/youtube.png" alt="youtube" height="50"
+        /></a>
+      </div>
+      <div class="infobar">
+        <div class="date">
+          <span id="displayDate"></span> | Spencer Bell | WDD230
+        </div>
+      </div>
+    </footer>
+    <script src="js/weather.js"></script>
+    <script src="js/gallery-7.js"></script>
+  </body>
+</html>
