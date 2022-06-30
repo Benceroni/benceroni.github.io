@@ -8,11 +8,6 @@
   width: 970px;
 }
 
-.weatherphotos:hover {
-  box-shadow: 1px 1px 30px rgba(0, 0, 0);
-  transition: 200ms;
-}
-
 .weatherphotos img {
   width: 100%;
 }
@@ -36,5 +31,9 @@
 @media only screen and (min-width: 37.5em) {
   .gridboxes {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .weatherphotos:hover {
+    box-shadow: 1px 1px 30px rgba(0, 0, 0);
+    transition: 200ms;
   }
 }
