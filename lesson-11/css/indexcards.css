@@ -1,0 +1,41 @@
+.cards img {
+  width: 100%;
+}
+.cards h2 {
+  font-size: xx-large;
+}
+.cards {
+  text-align: center;
+}
+
+.cards section {
+  padding: 1rem;
+  box-shadow: 0px 0px 10px gray;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin: auto 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .cards {
+    display: flex;
+  }
+  .cards section {
+    display: inline;
+    margin: 1rem;
+  }
+  .cards img {
+    bottom: 0px;
+  }
+}

@@ -1,0 +1,39 @@
+.gridboxes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 2rem 0 5rem 0;
+  justify-self: center;
+  width: 970px;
+}
+
+.weatherphotos img {
+  width: 100%;
+}
+
+.weatherphotos {
+  padding: 1rem;
+
+  box-shadow: ;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.448);
+}
+/* small view  */
+
+/* medium view */
+@media only screen and (min-width: 25em) {
+  .gridboxes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* large view for grid of photos */
+@media only screen and (min-width: 37.5em) {
+  .gridboxes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .weatherphotos:hover {
+    box-shadow: 1px 1px 30px rgba(0, 0, 0);
+    transition: 200ms;
+  }
+}
