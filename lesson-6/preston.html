@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston Weather</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="title">
+          <img src="images/logo1.jpeg" alt="" width="150" />
+          <div class="titleset">
+            <h1>Zeta Weather</h1>
+            <h2>Crankin' that weather forecast</h2>
+          </div>
+        </div>
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="#"> Home</a></li>
+          <li><a href="preston.html" class="active"> Preston</a></li>
+          <li><a href="sodaSprings.html"> Soda Springs</a></li>
+          <li><a href="fishHaven.html"> Fish Haven</a></li>
+          <li><a href="stormcenter.html"> Storm Center</a></li>
+          <li><a href="gallery.html"> Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h3 id="locationName">Preston Idaho</h3>
+      <div id="dependentmessage">This saturday at 9am! Pankcake breakfast at clovis park.</div>
+      <div class="heroimage">
+        <img class="heroimg" src="/weather/images/wdd230_image_franklinOriginal_800_no_label.jpeg"  sizes="50vw"
+        srcset="/weather/images/wdd230_image_franklinOriginal_200.jpeg 200w,
+         /weather/images/wdd230_image_franklinOriginal_500.jpeg 500w,
+          /weather/images/wdd230_image_franklinOriginal_800.jpeg 800w" alt="preston sunny day" />
+        
+          <div class="weathersummary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current"></span></p>
+            <p>High: <span id="high">lots of degreees°F</span></p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Wind speed: <span id="windSpeed"></span></p>
+          </div>
+          <div class="forecast">
+            <div class="daybox">
+            <div id="day1"></div>
+            <img id="img1" src="" alt="">
+            <div id="temp1">69*</div>
+          </div>
+          <div class="daybox">
+            <div id="day2">fill in next day</div>
+            <img id="img2" src="" alt="">
+            <div id="temp2">69*</div>
+          </div>
+          <div class="daybox">
+            <div id="day3">fill in next day</div>
+            <img id="img3" src="" alt="">
+            <div id="temp3">69*</div>
+          </div>
+          <div class="daybox">
+            <div id="day4">fill in next day</div>
+            <img id="img4" src="" alt="">
+            <div id="temp4">69*</div>
+          </div>
+          <div class="daybox">
+            <div id="day5">fill in next day</div>
+            <img id="img5"  src="" alt="">
+            <div id="temp5">69*</div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <img class = "articleimg" src="images/shotgun.jpg"  alt="">
+        <h3>Big papa out for a roast</h3>
+        <h4>Authored by: Richard C. Heney</h4>
+        <p>Joe fudd recently went on a hunting trip with his friend, joseph fuddrick. Joe was using a 28 gauge Perazzi shotgun with rock salt like a boomer, and shot Joseph Fuddrick, injuring his face, neck and upper chest. Each projectile lodged was less that .01 in in diameter. Projectiles lodged near joseph's heart lead to a minor heart attack and atrial fibrillation and a collapsed lung. Joes' have been a good sport about it tho. In the time since the incident they have been seen together in public "hitting the griddy" and eating pizza</p>
+
+      
+    </main>
+    <footer>
+      <img class="location-image" src="/images/Screenshot 2022-06-22 174615.png" alt="Location image" width="100%" />
+      
+      <div class="socialmedia">
+        <h3>Contact Us:</h3>
+        <p>📞 208.559.1224</p>
+        <p>🏡 1337 Blue Jay Ln Preston, ID 83448</p>
+        <p>📧 Contact@ZetaWeather.com</p>
+
+        <a href="https://instagram.com/monolith.sys" title="Instagram"
+          ><img src="images/instagram.png" alt="instagram" height="50"
+        /></a>
+        <a href="https://gmail.com/" title="email"
+          ><img src="images/email.png" alt="email" height="50"
+        /></a>
+        <a href="https://Youtube.com/" title="youtube"
+          ><img src="images/youtube.png" alt="youtube" height="50"
+        /></a>
+      </div>
+      <div class="infobar">
+        <div class="date">
+          <span id="displayDate"></span> | Spencer Bell | WDD230
+        </div>
+      </div>
+    </footer>
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

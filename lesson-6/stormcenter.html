@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston Weather</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/stormcenter.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="title">
+          <img src="images/logo1.jpeg" alt="" width="150" />
+          <div class="titleset">
+            <h1>Weatherby's Weather Stuff</h1>
+            <h2>Where Weather by Weatherby gets saturated</h2>
+          </div>
+        </div>
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="preston.html" > Preston</a></li>
+          <li><a href="sodaSprings.html"> Soda Springs</a></li>
+          <li><a href="fishHaven.html"> Fish Haven</a></li>
+          <li><a href="stormcenter.html" class="active"> Storm Center</a></li>
+          <li><a href="gallery.html"> Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h3>Report a storm</h3>
+      <form method="get" action="Thanks.html">
+        <legend></legend>
+        <fieldset>
+          <label>Full Name* <input type="text" name="fname" required/></label>
+          <label
+            >Email
+            <input type="email" name="email" placeholder="Hannah@banana.com"
+          /></label>
+          <label
+            >Phone Number*
+            <input type="tel" name="tel" required placeholder="5551234567"
+          /></label>
+          <label
+            >Zip code <input type="number" pattern="[0-9]{5}" required
+          /></label>
+          <label>Storm Date <input type="date" name="date" /></label>
+          <div class="stormtype">Storm Type</div>
+          <label
+            ><input type="radio" name="stormtype" value="Flash Flood" />Flash
+            Food</label
+          >
+          <label
+            ><input class="stormtype "type="radio" name="stormtype" value="Hail" />Hail</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="stormtype"
+              value="Hurricane"
+            />Hurricane</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="stormtype"
+              value="Thunderstorm"
+            />Thunderstorm</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="stormtype"
+              value="Tornado"
+            />Tornado</label
+          >
+
+          <label>Storm severity <input type="text" name="fname" /></label>
+
+          <label
+            >Storm Region
+            <select name="Region">
+              <option value="">Please select</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select>
+          </label>
+
+        <input class="submitBtn" type="submit" value="Report Storm" />
+      </form>
+    </main>
+    <footer>
+      <img
+        class="location-image"
+        src="/images/Screenshot 2022-06-22 174615.png"
+        alt="Location image"
+        width="100%"
+      />
+      <div class="socialm edia">
+        <a href="https://instagram.com/monolith.sys" title="Instagram"
+          ><img src="images/instagram.png" alt="instagram" height="50"
+        /></a>
+        <a href="https://gmail.com/" title="email"
+          ><img src="images/email.png" alt="email" height="50"
+        /></a>
+        <a href="https://Youtube.com/" title="youtube"
+          ><img src="images/youtube.png" alt="youtube" height="50"
+        /></a>
+      </div>
+      <div class="infobar">
+        <div class="date">
+          <span id="displayDate"></span> | Spencer Bell | WDD230
+        </div>
+      </div>
+    </footer>
+    <script src="js/weather.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>
