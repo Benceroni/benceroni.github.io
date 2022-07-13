@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preston Weather</title>
+    <title>Soda Springs Weather</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/weather.css" />
-    <link rel="stylesheet" href="css/eventcards.css">
+    <link rel="stylesheet" href="css/eventcards.css" />
   </head>
   <body>
     <header>
@@ -22,77 +22,79 @@
         <ul class="navigation">
           <li><a href="#" onclick="toggleMenu()">Menu</a></li>
           <li><a href="index.html"> Home</a></li>
-          <li><a href="preston.html" class="active"> Preston</a></li>
+          <li><a href="preston.html"> Preston</a></li>
           <li><a href="sodasprings.html"> Soda Springs</a></li>
-          <li><a href="fishHaven.html"> Fish Haven</a></li>
+          <li><a href="fishaven.html" class="active"> Fish Haven</a></li>
           <li><a href="stormcenter.html"> Storm Center</a></li>
           <li><a href="gallery.html"> Gallery</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h3 id="locationName">Preston</h3>
-      <div id="dependentmessage">This saturday at 9am! Pankcake breakfast at clovis park.</div>
+      <h3 id="locationName">Fish Haven</h3>
+      <div id="dependentmessage">
+        This saturday at 9am! Pankcake breakfast at clovis park.
+      </div>
+
       <div class="heroimage">
         <img
           class="heroimg"
-          src="images/pexels-pixabay-325944_800.jpg"
+          src="images/pexels-pixabay-158316_800.jpg"
           sizes="50vw"
           srcset="
-            images/pexels-pixabay-325944_200.jpg 200w,
-            images/pexels-pixabay-325944_500.jpg 500w,
-            images/pexels-pixabay-325944_800.jpg 800w
+            images/pexels-pixabay-158316_200.jpg 200w,
+            images/pexels-pixabay-158316_500.jpg 500w,
+            images/pexels-pixabay-158316_800.jpg 800w
           "
-          alt="soda springs night life"
+          alt="preston sunny day"
         />
-          <div class="weathersummary">
-            <h3>Weather Summary</h3>
-            <p>Currently: <span id="current"></span></p>
-            <p>High: <span id="high">lots of degreees°F</span></p>
-            <p>Wind Chill: <span id="windChill"></span></p>
-            <p>Humidity: <span id="humidity"></span></p>
-            <p>Wind speed: <span id="windSpeed"></span></p>
-          </div>
-          <div class="forecast">
-            <div class="daybox">
+
+        <div class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="current"></span></p>
+          <p>High: <span id="high">lots of degreees°F</span></p>
+          <p>Wind Chill: <span id="windChill"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>Wind speed: <span id="windSpeed"></span></p>
+        </div>
+        <div class="forecast">
+          <div class="daybox">
             <div id="day1"></div>
-            <img id="img1" src="" alt="">
+            <img id="img1" src="" alt="" />
             <div id="temp1">69*</div>
           </div>
           <div class="daybox">
             <div id="day2">fill in next day</div>
-            <img id="img2" src="" alt="">
+            <img id="img2" src="" alt="" />
             <div id="temp2">69*</div>
           </div>
           <div class="daybox">
             <div id="day3">fill in next day</div>
-            <img id="img3" src="" alt="">
+            <img id="img3" src="" alt="" />
             <div id="temp3">69*</div>
           </div>
           <div class="daybox">
             <div id="day4">fill in next day</div>
-            <img id="img4" src="" alt="">
+            <img id="img4" src="" alt="" />
             <div id="temp4">69*</div>
           </div>
           <div class="daybox">
             <div id="day5">fill in next day</div>
-            <img id="img5"  src="" alt="">
+            <img id="img5" src="" alt="" />
             <div id="temp5">69*</div>
           </div>
         </div>
       </div>
       <div class="cards"></div>
-      <div class="article">
-        <img class = "articleimg" src="images/shotgun.jpg"  alt="">
-        <h3>Big papa out for a roast</h3>
-        <h4>Authored by: Richard C. Heney</h4>
-        <p>Joe fudd recently went on a hunting trip with his friend, joseph fuddrick. Joe was using a 28 gauge Perazzi shotgun with rock salt like a boomer, and shot Joseph Fuddrick, injuring his face, neck and upper chest. Each projectile lodged was less that .01 in in diameter. Projectiles lodged near joseph's heart lead to a minor heart attack and atrial fibrillation and a collapsed lung. Joes' have been a good sport about it tho. In the time since the incident they have been seen together in public "hitting the griddy", eating pizza and performing the orange justice. We have yet to understand the deep local and national socioecinomic implications of this event.</p>
-
-      
     </main>
     <footer>
-      <img class="location-image" src="/images/Screenshot 2022-06-22 174615.png" alt="Location image" width="100%" />
-      
+      <img
+        class="location-image"
+        src="/images/Screenshot 2022-06-22 174615.png"
+        alt="Location image"
+        width="100%"
+      />
+
       <div class="socialmedia">
         <h3>Contact Us:</h3>
         <p>📞 208.559.1224</p>
@@ -111,12 +113,15 @@
       </div>
       <div class="infobar">
         <div class="date">
-          <span id="displayDate"></span> | Spencer Bell | WDD230 | Special thanks to <a href="https://openweathermap.org/">openweathermap.org</a> for weather info
+          <span id="displayDate"></span> | Spencer Bell | WDD230 | Special
+          thanks to
+          <a href="https://openweathermap.org/">openweathermap.org</a> for
+          weather info
         </div>
       </div>
     </footer>
     <script src="js/weather.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/windchillfish.js"></script>
     <script src="js/eventcards.js"></script>
   </body>
 </html>
