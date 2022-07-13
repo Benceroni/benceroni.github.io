@@ -7,6 +7,7 @@
     <title>Preston Weather</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/eventcards.css">
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
         </div>
         <ul class="navigation">
           <li><a href="#" onclick="toggleMenu()">Menu</a></li>
-          <li><a href="#"> Home</a></li>
+          <li><a href="index.html"> Home</a></li>
           <li><a href="preston.html" class="active"> Preston</a></li>
           <li><a href="sodaSprings.html"> Soda Springs</a></li>
           <li><a href="fishHaven.html"> Fish Haven</a></li>
@@ -30,7 +31,7 @@
       </nav>
     </header>
     <main>
-      <h3 id="locationName">Preston Idaho</h3>
+      <h3 id="locationName">Preston</h3>
       <div id="dependentmessage">This saturday at 9am! Pankcake breakfast at clovis park.</div>
       <div class="heroimage">
         <img class="heroimg" src="/weather/images/wdd230_image_franklinOriginal_800_no_label.jpeg"  sizes="50vw"
@@ -74,11 +75,12 @@
           </div>
         </div>
       </div>
+      <div class="cards"></div>
       <div class="article">
         <img class = "articleimg" src="images/shotgun.jpg"  alt="">
         <h3>Big papa out for a roast</h3>
         <h4>Authored by: Richard C. Heney</h4>
-        <p>Joe fudd recently went on a hunting trip with his friend, joseph fuddrick. Joe was using a 28 gauge Perazzi shotgun with rock salt like a boomer, and shot Joseph Fuddrick, injuring his face, neck and upper chest. Each projectile lodged was less that .01 in in diameter. Projectiles lodged near joseph's heart lead to a minor heart attack and atrial fibrillation and a collapsed lung. Joes' have been a good sport about it tho. In the time since the incident they have been seen together in public "hitting the griddy" and eating pizza</p>
+        <p>Joe fudd recently went on a hunting trip with his friend, joseph fuddrick. Joe was using a 28 gauge Perazzi shotgun with rock salt like a boomer, and shot Joseph Fuddrick, injuring his face, neck and upper chest. Each projectile lodged was less that .01 in in diameter. Projectiles lodged near joseph's heart lead to a minor heart attack and atrial fibrillation and a collapsed lung. Joes' have been a good sport about it tho. In the time since the incident they have been seen together in public "hitting the griddy", eating pizza and performing the orange justice. We have yet to understand the deep local and national socioecinomic implications of this event.</p>
 
       
     </main>
@@ -109,5 +111,6 @@
     </footer>
     <script src="js/weather.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/eventcards.js"></script>
   </body>
 </html>
