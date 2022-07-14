@@ -5,7 +5,6 @@
   justify-items: center;
   padding: 2rem 0 5rem 0;
   justify-self: center;
-  width: 970px;
 }
 
 .weatherphotos img {
@@ -15,15 +14,16 @@
 .weatherphotos {
   padding: 1rem;
 
-  box-shadow: ;
+  /* box-shadow: ; */
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.448);
 }
 /* small view  */
 
 /* medium view */
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 30em) {
   .gridboxes {
     grid-template-columns: 1fr 1fr;
+    width: 970px;
   }
 }
 
