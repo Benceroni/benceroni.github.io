@@ -17,9 +17,9 @@ fetch(requestURL)
       }
       for (let x = 0; x < towns[i].events.length; x++) {
         let card = document.createElement("section");
-        let h2 = document.createElement("h2");
-        h2.textContent = towns[i].events[x];
-        card.appendChild(h2);
+        let h3 = document.createElement("h3");
+        h3.textContent = towns[i].events[x];
+        card.appendChild(h3);
         document.querySelector("div.cards").appendChild(card);
         // console.log(towns[i].events[x]);
       }
