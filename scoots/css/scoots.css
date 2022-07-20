@@ -7,7 +7,9 @@ footer {
 }
 
 footer {
-  background-color: #2a9ae4;
+  background-color: #c01ec9;
+  display: grid;
+  justify-items: center;
 }
 body {
   background-color: #ffaa00;
@@ -17,7 +19,7 @@ body {
 }
 /* Navigation */
 nav {
-  background-color: #2a9ae4;
+  background-color: #c01ec9;
   margin: 0 auto;
   max-width: 960px;
   /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
@@ -36,6 +38,38 @@ nav ul li a {
   font-size: 1rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.infobar {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.date {
+  justify-content: space-around;
+}
+
+.contact {
+  line-height: 1.5;
+}
+
+.socialmedia {
+}
+
+.title {
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 28;
+}
+
+h4 {
+  font-size: 24;
+  padding-top: 2rem;
+}
+
 header {
   display: block;
 }
@@ -43,6 +77,11 @@ header {
   color: black;
   background-color: white;
   border-radius: 1rem;
+}
+
+.google {
+  justify-self: center;
+  width: 100%;
 }
 
 /* heroimage */
@@ -71,7 +110,7 @@ header {
   text-align: center;
   font-size: 24;
   padding: 1rem 0;
-  background-color: #2a9ae4;
+  background-color: c01ec9;
 }
 .rentals li {
   list-style-type: none;
@@ -83,7 +122,7 @@ header {
 .weathersummary {
   padding: 1.5rem;
   /* border: 1px solid black; */
-  background-color: #2a9ae4;
+  background-color: c01ec9;
 }
 .weathersummary h3 {
   font-size: 28;
@@ -100,6 +139,17 @@ header {
 
 .rentals img {
   width: 100%;
+}
+
+.infodump h3 {
+  text-align: center;
+  font-size: 24;
+  padding: 1rem 0;
+  background-color: #c01ec9;
+}
+.infodump ul {
+  list-style-type: none;
+  line-height: 1.5;
 }
 
 /* footer */
@@ -149,7 +199,7 @@ header {
     left: 5rem;
     top: 2.5rem;
     padding: 1.5rem;
-    background-color: #2a9ae4;
+    background-color: #c01ec9;
   }
   .weathersummary h3 {
     font-size: 28;
@@ -205,11 +255,71 @@ header {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 7;
+    grid-row-end: 10;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .active {
     border-radius: 1rem;
   }
+}
+
+form {
+  padding: auto 0.5rem;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+form label {
+  height: 44px;
+  flex-basis: 2rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 200px;
+  padding: 0.75rem;
+}
+
+form label input {
+  max-width: 20 rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: white;
+  padding: 0.75rem;
+  max-width: 20rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+form label input:required {
+  border-left: red solid 4px;
+}
+
+form label input:required:valid {
+  border-left: green solid 6px;
+}
+.rentaltype {
+  padding-top: 1rem;
+  padding-left: 0.75rem;
+}
+
+.home {
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 5rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.home a:link {
+  text-decoration: none;
+  border: 1px solid;
+  padding: 1rem 5rem;
+  border-radius: 16px;
 }
