@@ -1,0 +1,15 @@
+main {
+  height: 70vh;
+  background-color: white;
+  text-align: center;
+}
+
+.confirmed {
+  font-size: 36px;
+}
+
+h3 {
+  background-color: c01ec9;
+  padding: 3rem;
+  margin: 0;
+}

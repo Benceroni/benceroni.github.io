@@ -13,7 +13,7 @@
     <header>
       <nav>
         <div class="title">
-          <img src="logo" alt="" width="150" />
+            <img src="images/logo.jpg" alt="scooter logo" width="150" />
           <div class="titleset">
             <h1>Scoots!</h1>
             <h2>Enjoy your adventure in style</h2>
@@ -30,11 +30,74 @@
       </nav>
     </header>
     <main>
-      <!-- 
-
-        
+        <h3>Report a storm</h3>
+        <form method="get" action="confirmation.html">
+          <legend></legend>
+          <fieldset>
+            <label>Full Name* <input type="text" name="fname" required/></label>
+            <label
+              >Email*
+              <input type="email" name="email" placeholder="Hannah@banana.com" required
+            /></label>
+            <label
+              >Phone Number*
+              <input type="tel" name="tel" required placeholder="5551234567"
+            /></label>
+            <label>Home state/Country* <input type="text" name="state" required/></label>
+            <label>Cruise line <input type="text"/></label>
             
-         -->
+            <label>Reservation start date <input type="date" name="date" /></label>
+            <label>Reservation end date <input type="date" name="date" /></label>
+            <div class="rentaltype">Rental Type</div>
+            <label
+              ><input
+              type="radio"
+              name="rentaltype"
+              value="Honda Metro Scooter"
+              />Honda Metro Scooter</label
+            >
+            <label
+              ><input 
+              type="radio"
+              name="rentaltype"
+              value="Honda Dio Scooter"
+              />Honda Dio Scooter</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="rentaltype"
+                value="Honda PCX150 Scooter"
+              />Honda PCX150 Scooter</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="rentaltype"
+                value="Honda Pioneer ATV"
+              />Honda Pioneer ATV</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="rentaltype"
+                value="Jeep Wrangler—4 door with a/c"
+              />Jeep Wrangler—4 door with a/c</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="rentaltype"
+                value="Jeep Wrangler—2 door"
+              />Jeep Wrangler—2 door</label
+            >
+  
+            <label>Special accomidations/comments <input class = "special" type="text" name="fname" /></label>
+
+
+  
+          <input class="submitBtn" type="submit" value="Register your scooter reservation" />
+        </form>
     </main>
     <footer>
       <div class="socialmedia">
