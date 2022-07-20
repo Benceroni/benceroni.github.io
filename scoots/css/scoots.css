@@ -24,6 +24,7 @@ nav {
   max-width: 960px;
   /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
 }
+
 nav ul {
   list-style-type: none;
   overflow: hidden;
@@ -42,19 +43,26 @@ ul {
   list-style-type: none;
 }
 
-.infobar {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.navigation {
+  list-style: none;
+  padding: 0.5rem;
 }
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.responsive li {
+  display: block;
+}
+
 .date {
   justify-content: space-around;
 }
 
 .contact {
   line-height: 1.5;
-}
-
-.socialmedia {
 }
 
 .title {
@@ -161,6 +169,13 @@ header {
     border-radius: 0.5rem;
   }
 
+  .infobar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .socialmedia img {
+    margin: 5rem 0;
+  }
   h1 {
     font-size: 1.5rem;
   }
